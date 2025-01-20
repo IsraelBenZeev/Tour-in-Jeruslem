@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100%;
+    background-image: url("/images/gallery/street3.jpg");
+    background-size: cover;
+}
+
+main {
+    margin: auto;
+    height: 100vh;
+
+}
+
+.accordion {
+    animation: slide-up-y 1s;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accordion-button {
+    background-color: rgba(33, 53, 85, 0.281);
+    color: white;
+}
+
+.accordion-item {
+    color: white;
+    background-color: rgba(33, 53, 85, 0.507);
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    padding-top: 25px;
+    height: 20%;
+    margin: auto;
+    text-align: center;
+}
+.accordion-button::after {
+    z-index: 1 !important;
+}
+
+.accordion-button {
+    z-index: 0 !important;
+}
+
+.accordion-item {
+    z-index: 0 !important;
+}
+@keyframes slide-up-y{
+    from{
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to{
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+@media screen and (max-width: 734px) {
+    .accordion-item {
+        width:400px ;
+    }
+   }
+   @media screen and (max-width: 440px) {
+    .accordion-item {
+        width:300px ;
+    }
+   }

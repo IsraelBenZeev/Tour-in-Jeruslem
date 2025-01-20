@@ -1,0 +1,128 @@
+@import url("colors.css");
+main{
+    background-color: rgba(235, 234, 230, 0.499);
+    background-image: url("../images/gallery/street.jpg");
+    background-position: bottom left;
+    background-size: cover;
+}
+.container-form{
+    /* border: 2px solid blueviolet; */
+    background-color: var(--secondary_2);
+    /* background-image: url("../images/gallery/hotel.jpg"); */
+    /* width: 50%; */
+    margin: auto;
+    /* padding: 3px; */
+    justify-content: space-between;
+    flex-direction: column;
+    animation: slideUpY 1s ease-out;
+    opacity: 80%;
+}
+.container-form img{
+    width: 70%;
+    /* height: 80px; */
+    object-fit: cover;
+}
+
+form{
+    width: 100%;
+    padding: 5px;
+    gap: 40px;
+    flex-wrap: wrap;
+    border-top: 60px solid var(--primary_2);
+    border-bottom: 60px solid var(--primary_2);
+    border-right: 2px solid var(--primary_2);
+    border-left: 2px solid var(--primary_2);
+    gap: 30px;
+}
+form div{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 3px solid red; */
+}
+
+.myCard{
+    /* border: 3px solid red; */
+    flex-direction: column;
+    width: 45%;
+    display: block;
+    /* justify-content: space-between; */
+    /* gap: 40px; */
+}
+input{
+    border: 2px solid var(--primary);
+    animation: slideUpX 1.5s ease-out;
+}
+
+label{
+    display: block;
+    color: var(--primary);
+    animation: slideUpX 1.5s ease-out;
+}
+#start-date, #end-date{
+    display: block;
+}
+textarea{
+    border: 2px solid var(--primary);
+    width: 100%;
+    animation: slideUpX 1.5s ease-out;
+}
+.card5 {
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.sumbit, .reset{
+    border-radius: 5%;
+    border: none;
+    /* transition: all 1s ease-in-out; */
+    transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    width: 100%;
+
+    border-radius: 5%;
+    border: 2px solid transparent; /* מסגרת ראשונית שקופה */
+    outline: none; /* למנוע אפקט מסגרת ברירת מחדל */
+    transition: all 0.5s ease-in-out; /* אנימציה חלקה */
+    width: 100%;
+    position: relative; /* כדי לשמור על המיקום */
+}
+.sumbit:hover, .reset:hover{
+    /* background-color: var(--primary); */
+    transform: scale(1.1);
+    border-top: 3px solid var(--primary_2);
+    border-bottom: 3px solid var(--primary_2);
+}
+
+
+/* animations */
+@keyframes slideUpY {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpX {
+    from {
+        transform: translatex(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 530px){
+    .myCard{
+        width: 100%;
+    }
+    textarea{
+        width: 70%;
+    }
+}
+

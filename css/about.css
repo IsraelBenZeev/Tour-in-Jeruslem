@@ -1,0 +1,22 @@
+@import url("./colors.css");
+main .container{
+    /* border: 2px solid red; */
+    min-height: 400px;
+    /* width: 100%; */
+    background-image: url("../images/3.jpg");
+    background-position: center center;
+    background-size: cover;
+    opacity: 60%;
+}
+.about{
+    padding: 25px;
+    direction: rtl;
+    background-color: azure;
+    opacity: 80%;
+    border-bottom: 10px solid var(--primary_2);
+}
+h2{
+    font-weight: bold;
+}
+
+

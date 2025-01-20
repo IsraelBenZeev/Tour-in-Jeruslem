@@ -1,0 +1,14 @@
+.fa{
+    font-size: 200px;
+    animation: big 2s ease-out;
+}
+@keyframes big {
+    from {
+        transform: scale(0);
+        /* opacity: 0; */
+    }
+    to {
+        transform: scale(1.2);
+        /* opacity: 1; */
+    }
+}
