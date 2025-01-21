@@ -229,6 +229,7 @@ main{
     }
     .cards1, .cards2{
         flex-direction: column;
+
     }
     .myCard{
         border-right: 10px solid var(--primary_2);
@@ -252,6 +253,7 @@ main{
     .info img{
         display: none;
     }
+
 }
 @media (min-width: 681px) {
     .myCard{

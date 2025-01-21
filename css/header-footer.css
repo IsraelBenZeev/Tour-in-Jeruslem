@@ -237,7 +237,7 @@ footer .fas, footer .fab{
      }
      .logo{
         /* border: 2px solid red; */
-        width: 30%;
+        width: 25% !important;
      }
      .links-desktop{
         display: none;
