@@ -232,23 +232,26 @@ main{
         flex-direction: column;
     }
     .myCard{
-        width: 100%;
-        min-height: unset;
-        height: 250px;
         border-right: 10px solid var(--primary_2);
         border-left: 10px solid var(--primary_2);
         border-top: none;
         border-bottom: none;
+        width: 100%;
+        min-height: unset;
+        height: 250px;
     }
     .myCard:hover{
     }
     .text-card{
         width: 100%;
-        min-height: unset;
+        height: unset;
         height: 80px;
         h2{
             padding: 0;
         }
+    }
+    .info img{
+        display: none;
     }
 }
 @media (min-width: 681px) {
