@@ -19,25 +19,31 @@ main{
 .myCarusel{
     /* border: 5px solid rgb(205, 68, 38); */
     padding: 0;
-    width: 100%;
+    width: 100vw;
     animation: slideUpCarousel 0.5s;
 }
 .carousel-item img{
     /* border: 5px solid rgb(205, 68, 38); */
-    height: 500px;
-    width: 100vw;
+    height: 600px;
+    /* width: 95vw; */
+    width: 100%;
     object-fit: cover;
+    opacity: 85%;
 }
 .main2{
     background-color: var(--secondary_2);
     background-color: whitesmoke;
     flex-wrap: wrap;
+
 }
 .main2 .container{
     gap: 50px;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 .cards1, .cards2{
+    /* border: 2px solid forestgreen; */
+    flex: 1;
     font-family: 'Rubik Maps', serif;
     flex-wrap: wrap;
     width: 100%;
@@ -139,7 +145,11 @@ main{
     }
 }
 .numbers{
+    flex: 1;
     gap: 5px;
+}
+.information{
+    flex: 1;
 }
 .information .container{
     height: 800px;
@@ -232,19 +242,23 @@ main{
 
     }
     .myCard{
+        padding: 40px;
         border-right: 10px solid var(--primary_2);
         border-left: 10px solid var(--primary_2);
         border-top: none;
         border-bottom: none;
         width: 100%;
         min-height: unset;
-        height: 250px;
+        height: 650px;
+        flex: 1;
     }
     .myCard:hover{
+        flex: 7;
     }
+
     .text-card{
         width: 100%;
-        height: unset;
+        flex: 1;
         height: 80px;
         h2{
             padding: 0;
