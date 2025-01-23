@@ -1,0 +1,50 @@
+body{
+    width: 96vw;
+    font-family: 'Segoe UI';
+}
+.center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container{
+    border: 2px solid red;
+    width: 100%;
+    margin: auto;
+    height: 1000px;
+}
+.card{
+    border: 3px solid green;
+    height: 200px;  /* הוספת גובה קבוע */
+    width: 40vw;
+    background-image: url("../חרדים.jpeg");
+    background-position: top center;
+    background-size: cover;
+    flex-direction: column;
+    border-radius: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+.txt{
+    background-color: rgba(250, 235, 215, 0.336);
+    height: 25%;
+    width: 100%;
+    justify-self: flex-end;
+    /* align-self: end; */
+    /* flex: 1; */
+}
+p{
+    direction: rtl;
+    font-size: 80%;
+
+}
+.image{
+    border: 1px solid red;
+    background-image: url("../חרדים.jpeg");
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    flex: 2;
+}
+
+
