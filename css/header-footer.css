@@ -5,6 +5,7 @@
 *{
     box-sizing: border-box;
 }
+
 main{
     padding: 5px;
     /* border-radius: 3px solid red; */
@@ -14,7 +15,6 @@ body{
     padding: 0;
     font-family: monospace, 'Heebo';
     flex-direction: column;
-    width: 95vw;
 }
 .container-fuild{
     width: 100%;
@@ -42,7 +42,7 @@ header{
     position: sticky;
     z-index: 1998;
     top: 0;
-    width: 95vw;
+    width: 100%;
 }
 header .container{
     /* border: 3px solid red; */
@@ -157,6 +157,9 @@ footer .fas, footer .fab{
     align-items: end;
     transition: all 0.4s;
     background-color: var(--primary);
+    position: absolute;
+    top: 10px;
+    right: 10px;
 
 }
 .hamburger:hover{
@@ -238,7 +241,7 @@ footer .fas, footer .fab{
     } */
     header {
         display: none;
-        height: 0vh;
+        height: 0vh; 
         position: relative;
     }
 
@@ -248,9 +251,7 @@ footer .fas, footer .fab{
      #hamburger{
         display: flex;
         align-items: end;
-        position: absolute;
-        top: 10px;
-        right: 10px;
+     
      }
      .logo{
         /* border: 2px solid red; */

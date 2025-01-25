@@ -5,31 +5,30 @@
 main{
     /* border: 5px solid rgb(205, 68, 38); */
     /* gap: 60px; */
-    width: 100%;
+    /* width: 100%; */
     flex-direction: column;
     padding: 0;
 }
 .main1{
-    width: 100vw;
+    /* width 100vw; */
     /* border: 5px solid rgb(205, 68, 38); */
-    /* background-color: var(--secondary_2); */
     background-color: whitesmoke;
     padding: 0;
+    width: 100%;
 }
 .myCarusel{
-    /* border: 5px solid rgb(205, 68, 38); */
+    /* border: 5px solid rgb(38, 205, 205); */
     padding: 0;
-    width: 100vw;
+    width: 100%;
     animation: slideUpCarousel 0.5s;
 }
 .carousel-item img{
-    /* border: 5px solid rgb(205, 68, 38); */
     height: 600px;
-    /* width: 95vw; */
-    width: 100%;
+    width: 98vw;
     object-fit: cover;
     opacity: 85%;
 }
+
 .main2{
     background-color: var(--secondary_2);
     background-color: whitesmoke;
@@ -234,6 +233,10 @@ main{
     .container{
         width: 100%;
     }
+    .carousel-item img{
+        width: 100vw;
+    }
+
     .main2 .container{
         gap: 3px;
     }
