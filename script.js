@@ -40,6 +40,20 @@ document.addEventListener("scroll", () => {
   }
 });
 
+document.addEventListener("scroll", () => {
+  console.log("scroling 4");
+  const cardLeft = document.querySelector(".cardsLeft");
+  const cardRight = document.querySelector(".cardsRight");
+  const rectLeft = cardLeft.getBoundingClientRect();  // שינוי: בדיקת המיקום של cardLeft במקום jerusalemNumber
+
+  if (rectLeft.top < window.innerHeight && rectLeft.bottom > 0) {
+    cardLeft.classList.add("visible");
+    cardRight.classList.add("visible");
+  } else {
+    cardLeft.classList.remove("visible");
+    cardRight.classList.remove("visible");
+  }
+});
 
 const sideMenu = document.getElementById('mobile-menu');
 const hamburger = document.getElementById('hamburger');

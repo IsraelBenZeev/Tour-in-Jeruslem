@@ -171,52 +171,116 @@ main{
     transform: translatey(0); /* בתוך המסך */
 }
 
-.cards3{
-    /* border: 2px solid red; */
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.info{
-    /* border: 2px solid red; */
-    border-top: 3px solid var(--primary);
-    border-bottom: 3px solid var(--primary);
-    color: rgb(56, 33, 2);
-    direction: rtl;
-    font-weight: bold;
-    opacity: 80%;
-    padding: 3px;
-    border-radius: 3%;
-    background-color: var(--secondary_2);
-    /* border-radius: 20%; */
-    height: 100px;
-    width: 150px;
-    box-shadow: 5px 5px 10px 1px rgb(71, 69, 69);
-    /* flex: 1; */
-    padding: 6px;
-    /* flex-direction: column; */
-    position: relative;
-    /* height: 40%; */
-    gap: 1px;
-    p{
-        margin-top: 10px;
-    }
-    img{
-        position: absolute;
-        top: 1px;
-        width: 50%;
-        margin: auto;
-    
-        margin-bottom: 10px;
-        /* border: 3px solid red; */
-    }
-    
+.information{
+    /* border: 3px solid rgb(128, 0, 0);  */
+    /* width: 25%; */
+    gap: 6px;
+    justify-content: space-between;
 }
 
-.cards3 .fa{
-    font-size: 300%;
-    display: none;
+.cardsLeft, .cardsRight{
+    /* border: 3px solid green; */
+    flex-direction: column;   
+    gap: 6px;
+    width: 40%;
+      /* chatGPT */
+      opacity: 0; /* מוסתר */
+      transform: translatex(30%); /* מחוץ למסך */
+      transition: opacity 0.3s ease-out, transform 1s ease-out;
 }
+
+.cardsLeft.visible, .cardsRight.visible {
+    opacity: 1; /* גלוי */
+    transform: translatex(0); /* בתוך המסך */
+}
+.cardsLeft{
+    /* border: 3px solid green;  */
+     /* chatGPT */
+     opacity: 0; /* מוסתר */
+     transform: translatex(-30%); /* מחוץ למסך */
+     transition: opacity 0.3s ease-out, transform 1s ease-out;  
+}
+.cardsRight{
+    /* border: 3px solid rgb(128, 90, 0);  */
+     /* chatGPT */
+     opacity: 0; /* מוסתר */
+     transform: translatex(30%); /* מחוץ למסך */
+     transition: opacity 0.3s ease-out, transform 1s ease-out;
+}
+.info{
+    /* border: 3px solid green; */
+    background-color: rgba(128, 57, 57, 0.703);
+    background-position: top center;
+    background-size: cover;
+    border-left:4px solid var(--primary_2);
+    border-right:4px solid var(--primary_2);
+    height: 180px;
+    width: 100%;
+    padding: 3px;
+    flex-direction: column;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 2px 2px 2px 1px #a59797;
+
+    .image{
+        /* border: 1px solid red; */
+        /* background-image: url("./haredim.jpeg"); */
+     
+        border-radius: 10px 10px 0 0 ;
+        width: 100%;
+        flex: 2;
+    }
+    .txt{
+        font-style: normal;
+        font-weight: 600;
+        font-size: x-small;
+        background-color: rgba(235, 232, 208, 0.732);
+        height: 25%;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        justify-self: flex-end;
+        margin-top: -36px; /* יוצר חפיפה עם התמונה */
+        p{
+            padding: 0 2px;
+            margin: 0;
+            direction: rtl;
+            text-align: center;
+        }
+    }
+}
+.cardsLeft .info1{
+    background-image: url("../images/information/haredim.jpeg");
+}   
+.cardsLeft .info2{
+    background-image: url("../images/information/Residents.webp");
+}   
+.cardsLeft .info3{
+    background-image: url("../images/information/big\ city.jpg");
+}  
+.cardsLeft .info4{
+    background-image: url("../images/information/Neighborhoods2.jpg");
+}  
+.cardsLeft .info5{
+    background-image: url("../images/information/Jerusalem\ of\ Israel.webp");
+}
+
+.cardsRight .info1{
+    background-image: url("../images/information/Tourists.jpg");
+}  
+.cardsRight .info2{
+    background-image: url("../images/information/favicon.jpg");
+}  
+.cardsRight .info3{
+    background-image: url("../images/information/אולם\ מועצת\ העיר\ ירושלים.jpeg");
+}  
+.cardsRight .info4{
+    background-image: url("../images/information/Jerusalem-train.jpeg");
+}  
+.cardsRight .info5{
+    background-image: url("../images/information/100.jpeg");
+}  
+
 
 @keyframes slideUpCarousel {
     from {
